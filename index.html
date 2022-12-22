@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="navbar saroj">
+    <div class="logo">Navbar</div>
+    <nav>
+      
+      <ul class="raja aryal">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Orders</li>
+        <li>Abouts</li>
+        <li>Contact</li>
+        <li>Others</li>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+
+    body{
+      height: 100vh;
+    }
+
+    .line{
+      width: 30px;
+      height: 5px;
+      background-color: white;
+      margin: 5px 0px;
+    }
+    .burger{
+      position: absolute;
+      left: 88%;
+      top: 1%;
+      cursor: pointer;
+      display: none;
+    }
+   
+    .navbar{
+      display: flex;
+      
+      align-items: center;
+      justify-content: space-around;
+      background-color: blue;
+      color: whitesmoke;
+    }
+    
+    .navbar .logo{
+      font-size: 40px;
+      margin-left: 10%;
+    }
+    .navbar ul li{
+      list-style: none;
+      margin: 15px;
+    }
+    .navbar ul{
+      display: flex;
+    }
+
+    @media screen and (max-width:800px)
+    {
+      .burger{
+        display: block;
+       
+      }
+      
+     ul{
+      flex-direction: column;
+      
+     }
+     
+
+     .logo{
+      position: absolute;
+      left: -3%;
+     }
+
+     .saroj{
+      height: 10%;
+    }
+
+    .aryal{
+      opacity: 0;
+     }
+    }
+
+    
+  </style>
+  <script src="script.js"></script>
+</body>
+</html>
